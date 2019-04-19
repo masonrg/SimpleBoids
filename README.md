@@ -4,6 +4,10 @@
 This project is made using Unity 2018.2.14f1 for the CSC 305: Introduction to Computer Graphics course at the University of Victoria, and investigates the boid flocking ai behaviours such as cohesion, alignment, and collision avoidance, as well as predatory behaviours such as group disruption and target isolation.
 
 ----
+## Demonstration Video
+[![Demonstration](https://img.youtube.com/vi/8SM9PCxETZw/0.jpg)](https://www.youtube.com/watch?v=8SM9PCxETZw "Boids Simulation")
+
+----
 ## A brief description of the main features of this project
 
 - Customizable and editor-friendly path generation using Catmull-Rom splines; used by the flock leader boids
