@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1201352176133370}
+  m_IsPrefabAsset: 1
+--- !u!1 &1201352176133370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4666731009192978}
+  - component: {fileID: 114865150074182708}
+  m_Layer: 0
+  m_Name: BoidController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4666731009192978
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1201352176133370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114865150074182708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1201352176133370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b86e086a0ec924488009b0b12573ef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boidPrefab: {fileID: 1285184999286596, guid: 0353f16578c85274e9f17f6758eacf05, type: 2}
+  predatorPrefab: {fileID: 1102600107873326, guid: f7466cbc7c6b0ab40a0f0f7713946d54,
+    type: 2}
+  leaderPrefab: {fileID: 1845949712374152, guid: 6933369f8f9fc5f4a856385884f4a214,
+    type: 2}
+  boidContainer: {fileID: 4666731009192978}
+  boidList: []
+  predatorList: []
+  boundary:
+    Min: {x: -5, y: 0, z: -5}
+    Max: {x: 5, y: 10, z: 5}
+  spawnMode: 2
+  boidCount: 50
+  predatorCount: 2
+  gravityForce: {x: 0, y: -9.81, z: 0}
+  viewRadius: 3
+  collideRadius: 1.5
+  avoidancePredictTime: 1
+  evasionPredictTime: 0
+  maxAvailableThrust: 10
+  speed: 1.75
+  maxSpeed: 10
+  obstacleAwarenessRadius: 8
+  obstacleLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  randomnessWeight: 0.38
+  obedienceWeight: 0.205
+  avoidanceWeight: 0.819
+  alignmentWeight: 0.061
+  cohesionWeight: 0.044
+  evasionWeight: 1
+  randomnessWeightNorm: 0.15145476
+  obedienceWeightNorm: 0.08170585
+  avoidanceWeightNorm: 0.32642487
+  alignmentWeightNorm: 0.024312474
+  cohesionWeightNorm: 0.017536867
+  evasionWeightNorm: 0.39856514
